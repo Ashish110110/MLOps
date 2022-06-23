@@ -3,7 +3,7 @@
 
 
 
-get_ipython().system('pip freeze | grep scikit-learn')
+#get_ipython().system('pip freeze | grep scikit-learn')
 
 import pickle
 import mlflow
