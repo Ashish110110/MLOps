@@ -14,7 +14,7 @@ We have a database with all our data. We have a scoring job, which has our model
 
 Online mode is always available for predictions. There are two ways to deploy online model : 
 
-a. Deployment as a Web Service
+a. Deployment as a Web Service "\n"
 b. Deployment as a Stream
 
 ### 2a. Deployment as a Web Service
