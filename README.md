@@ -1,8 +1,8 @@
 # MLOps
 
-This repo consists of solutions of MLOps course by DataTalksClub.
+This repo consists of solutions of MLOps Zoomcamp by DataTalksClub.
 
-Link to the course : https://github.com/DataTalksClub/mlops-zoomcamp
+Course Link : https://github.com/DataTalksClub/mlops-zoomcamp
 
 
 ## Module 1 : Introduction
