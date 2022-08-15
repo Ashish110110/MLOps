@@ -64,14 +64,9 @@ https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-
 
 ## Technologies Used 
 
-* AWS
-* MLflow
-* Prefect
-* Docker
-* Evidently AI
-* Grafana
-* Prometheus
-* Linting
-* Code Formatting
-* Makefile
-* Pre-commit hooks
+* Cloud : AWS
+* Experiment Tracking : MLflow
+* Workflow Orchestration : Prefect
+* Model Deployment : Docker and Docker Compose
+* Model Monitoring : Evidently AI, Grafana and Prometheus
+* Best Practices : Linting, Code Formatting, Makefile and Pre-commit hooks
