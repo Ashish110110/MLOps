@@ -63,7 +63,7 @@ mlflow server --backend-store-uri=sqlite:///mlflow.db --default-artifact-root=s3
 
 3. Make sure the server from step-1 is up and running. After the execution of step-2 is finished, execute the script train.py in terminal 2. The script will load the datasets produced by the previous step, train the model on the training set and calculates the RMSE on the validation set. The script logs the parameters and artifacts in MLflow(locally) as well as logs the artifacts in S3 bucket(cloud). Run the script using the following command : 
 
- **Command** : python train.py
+   **Command** : python train.py
 
 **NOTE** If you use other AWS profile other than "default", then please go to **line number 9** of train.py and change the os.environ["AWS_PROFILE"] variable to your profile name before executing the script. If the profile name is "user1", then line number 9 should look like : os.environ["AWS_PROFILE"] = "user1"
 
