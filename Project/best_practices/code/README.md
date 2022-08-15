@@ -45,7 +45,7 @@ Integration test uses Localstack to mimic S3 bucket. Instead of using actual S3 
 
 2. Initialize empty Git repository by running the following command : 
 
-**Command** : git init
+   **Command** : git init
 
 3. Install pre-commit by running the following command : 
 
