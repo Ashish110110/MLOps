@@ -2,7 +2,7 @@
 
 This is my project for MLOps Zoomcamp from DataTalks.Club
 
-## Problem Statement
+## Objective
 
 Wine is differentiated according to its smell, flavor, and color. Judging the quality of wine manually is a tough task. Even the professional wine tasters don't have 100% accuracy. The Master Sommelier Diploma Exam is the world's most challenging wine tasting examination and only a few hundred people have passed it. So how do we decide that wine is good or bad? 
 
