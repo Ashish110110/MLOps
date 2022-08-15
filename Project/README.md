@@ -62,11 +62,12 @@ More information on how to create a virtual environment using Pipfile can be fou
 https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-copied-pipfile-inside-a-virtual-environment
 
 
-## Technologies Used 
+## Tools and Technologies Used 
 
 * Cloud : AWS
-* Experiment Tracking : MLflow
+* Experiment Tracking and Model Registration : MLflow
 * Workflow Orchestration : Prefect
-* Model Deployment : Docker and Docker Compose
+* Containerization : Docker and Docker Compose
+* Model Deployment : Deployment as web service using Flask, Docker, MLflow and AWS
 * Model Monitoring : Evidently AI, Grafana and Prometheus
 * Best Practices : Linting, Code Formatting, Makefile and Pre-commit hooks
