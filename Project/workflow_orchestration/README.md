@@ -9,7 +9,9 @@ I have demonstrated following services of Prefect in this section :
 3. Blocks
 4. Work Queues and Agents
 
-### Prefect Storage Concept
+***********************************************************************************************************************************************************************
+
+**Prefect Storage Concept**
 
 Storage lets us configure how flow code for deployments is persisted and retrieved by Prefect agents. Anytime we build a deployment, a storage block is used to upload the entire directory containing our workflow code (along with supporting files) to its configured location. This helps ensure portability of our relative imports, configuration files, and more.
 
@@ -19,7 +21,7 @@ If no storage is explicitly configured, Prefect will use LocalFileSystem storage
 
 Blocks are a primitive within Prefect that enable the storage of configuration and provide an interface for interacting with external systems. Blocks are useful for configuration that needs to be shared across flow runs and between flows.
 
-
+***********************************************************************************************************************************************************************
 
 Before running any commands, **please create a S3 bucket in your AWS account**. The script will save data files to this S3 bucket.
 
