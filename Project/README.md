@@ -1,14 +1,18 @@
-# Project - Red Wine Quality Prediction
+# MLOps Zoomcamp Project - Red Wine Quality Prediction
 
-**Dataset** : Red Wine Quality
+This is my project for MLOps Zoomcamp from DataTalks.Club
 
-**Link** : https://archive.ics.uci.edu/ml/datasets/wine+quality
-
-**Problem Statement** :
+## Problem Statement
 
 Wine is differentiated according to its smell, flavor, and color. Judging the quality of wine manually is a tough task. Even the professional wine tasters don't have 100% accuracy. The Master Sommelier Diploma Exam is the world's most challenging wine tasting examination and only a few hundred people have passed it. So how do we decide that wine is good or bad? 
 
 This project aims to solve the above problem. The aim of this project is to identify the features that best predict the quality of red wine and to produce insights into how each of these features affects the red wine quality in the model. Understanding how each feature will impact the red wine quality will help producers, distributors and companies in the red wine sector to better evaluate their production, distribution and pricing strategy.
+
+***********************************************************************************************************************************************************************
+
+**Dataset** : Red Wine Quality
+
+**Link** : https://archive.ics.uci.edu/ml/datasets/wine+quality
 
 **About the Dataset** :
 
@@ -43,7 +47,7 @@ The output variable (based on sensory data) :
 12 - quality (score between 0 and 10)
 
 
-**Project Structure** :
+## Project Structure
 
 I have made separate directory for each criteria mentioned in README of MLOps Zoomcamp Course Project (https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/07-project)
 
