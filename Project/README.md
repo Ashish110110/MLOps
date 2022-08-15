@@ -61,3 +61,11 @@ Each directory has a README file in it which has the instructions on how to run 
 More information on how to create a virtual environment using Pipfile can be found here : 
 https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-copied-pipfile-inside-a-virtual-environment
 
+
+## Technologies Used : 
+
+* MLflow
+* Prefect
+
+
+
