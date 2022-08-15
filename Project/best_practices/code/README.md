@@ -27,7 +27,7 @@ You should be inside **code** directory. You can give permission to run.sh file 
 
 2. Execute the following command : 
 
-**Command** : make publish
+ **Command** : make publish
 
 This command will : 
 
