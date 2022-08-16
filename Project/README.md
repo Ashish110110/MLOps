@@ -14,39 +14,6 @@ This project aims to solve the above problem. The aim of this project is to iden
 
 **Link** : https://archive.ics.uci.edu/ml/datasets/wine+quality
 
-**About the Dataset** :
-
-The dataset contains a total of 12 variables, which were recorded for 1,599 observations.
-
-The input variables (based on physicochemical tests) : 
-
-1 - fixed acidity
-
-2 - volatile acidity
-
-3 - citric acid
-
-4 - residual sugar
-
-5 - chlorides
-
-6 - free sulfur dioxide
-
-7 - total sulfur dioxide
-
-8 - density
-
-9 - pH
-
-10 - sulphates
-
-11 - alcohol
-
-The output variable (based on sensory data) :
-
-12 - quality (score between 0 and 10)
-
-
 ## Project Structure
 
 I have made separate directory for each criteria mentioned in README of MLOps Zoomcamp Course Project (https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/07-project)
@@ -69,7 +36,7 @@ https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-
 ## Tools and Technologies Used 
 
 * Cloud : AWS
-* Experiment Tracking and Model Registration : MLflow
+* Experiment Tracking and Model Registry : MLflow
 * Workflow Orchestration : Prefect
 * Containerization : Docker and Docker Compose
 * Model Deployment : Deployment as web service using Flask, Docker, MLflow and AWS
