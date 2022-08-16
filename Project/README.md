@@ -8,11 +8,7 @@ Wine is differentiated according to its smell, flavor, and color. Judging the qu
 
 This project aims to solve the above problem. The aim of this project is to identify the features that best predict the quality of red wine and to produce insights into how each of these features affects the red wine quality in the model. Understanding how each feature will impact the red wine quality will help producers, distributors and companies in the red wine sector to better evaluate their production, distribution and pricing strategy.
 
-***********************************************************************************************************************************************************************
-
-**Dataset** : Red Wine Quality
-
-**Link** : https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009
+I have used Red Wine Quality dataset. It can be found [here](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009).
 
 ## Project Structure
 
