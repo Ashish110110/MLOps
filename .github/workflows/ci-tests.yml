@@ -4,7 +4,7 @@ on:
     branches:
       - 'develop'
     paths:
-      - 'best-practices/code/**'
+      - 'Project/best-practices/code/**'
 
 env:
   AWS_DEFAULT_REGION: 'ap-south-1'
