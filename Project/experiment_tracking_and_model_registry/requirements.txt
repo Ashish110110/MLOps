@@ -1,0 +1,10 @@
+mlflow==1.26.1
+jupyter
+scikit-learn
+pandas
+seaborn
+hyperopt
+xgboost
+fastparquet
+boto3
+s3fs
