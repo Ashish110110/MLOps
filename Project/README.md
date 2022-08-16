@@ -12,7 +12,7 @@ This project aims to solve the above problem. The aim of this project is to iden
 
 **Dataset** : Red Wine Quality
 
-**Link** : https://archive.ics.uci.edu/ml/datasets/wine+quality
+**Link** : https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009
 
 ## Project Structure
 
