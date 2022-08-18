@@ -22,6 +22,7 @@ The directories are :
 4. model_deployment
 5. model_monitoring
 6. best_practices
+7. Continuous Integration is in ".github/workflows/" folder, in parent directory. It can be found [here](https://github.com/Ashish110110/MLOps/tree/main/.github/workflows)
 
 Each directory has a README file in it which has the instructions on how to run the code. Also, each directory has Pipfile in it. So if you face any issues with virtual environment, you can use the Pipfile to create a new virtual environment.
 
