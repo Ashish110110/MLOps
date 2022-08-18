@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-# cd "$(dirname "$0")"
-if [[ -z "${GITHUB_ACTIONS}" ]]; then
-  cd "$(dirname "$0")"
-fi
+cd "$(dirname "$0")"
 
 if [ "${LOCAL_IMAGE_NAME}" == "" ]; then
     LOCAL_TAG=`date +"%Y-%m-%d-%H-%M"`
@@ -16,11 +13,11 @@ fi
 
 docker-compose up -d
 
-sleep 5
+sleep 2
 
 export AWS_DEFAULT_REGION=ap-south-1
-export AWS_ACCESS_KEY_ID="abc"
-export AWS_SECRET_ACCESS_KEY="xyz"
+export AWS_ACCESS_KEY_ID="hello-world"
+export AWS_SECRET_ACCESS_KEY="hello-world"
 
 aws s3 mb s3://red-wine-quality --endpoint-url=http://localhost:4566
 
