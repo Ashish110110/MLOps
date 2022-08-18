@@ -46,4 +46,4 @@ Course Link : https://github.com/DataTalksClub/mlops-zoomcamp
 * Python : Linting and Formatting
 * Pre-commit hooks and makefiles
 * CI/CD (Github Actions)
-* Infrastructure as code (Terraform)
+* Infrastructure as Code (Terraform)
