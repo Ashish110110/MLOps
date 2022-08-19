@@ -4,8 +4,7 @@ This section aims to deploy the model to AWS S3 bucket(Cloud).
 
 **NOTE :** I have used SSH terminal for this section. I have provided the Pipfile if you are facing issues with the environment. You can create a virtual environment using Pipfile by running the command : pipenv install
 
-More information on how to create a virtual environment using Pipfile can be found here : 
-https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-copied-pipfile-inside-a-virtual-environment
+More information on how to create a virtual environment using Pipfile can be found [here](https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-copied-pipfile-inside-a-virtual-environment)
 
 Before running any commands, **please create a S3 bucket in your AWS account**. The scripts will deploy the model in this bucket.
 
@@ -22,7 +21,7 @@ Please enter the credentials above before running the scripts.
 
 ## Steps to execute the script
 
-1. Open 3 terminal windows. Terminal 1, Terminal 2, and Terminal 3.
+1. Open 3 terminal windows. Terminal 1, Terminal 2, and Terminal 3. In all the terminals, activate virtual environment which has the libraries mentioned in Pipfile. You should be inside web-service-mlflow directory in all the 3 terminals.
 
 2. In Terminal 1, type the following command :
 
