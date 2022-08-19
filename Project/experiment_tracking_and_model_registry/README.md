@@ -45,7 +45,7 @@ If you use any other AWS profile other than "default", then you will have to mak
 
 ### Steps to run the scripts
 
-1. Open 2 SSH terminal/Anaconda Prompt - Terminal 1 and Terminal 2. Activate virtual environment which has the libraries mentioned in **requirements.txt** file. You should be inside experiment_tracking_and_model_registry directory in both the terminals.
+1. Open 2 SSH terminal/Anaconda Prompt - Terminal 1 and Terminal 2. In both the terminals, activate virtual environment which has the libraries mentioned in **requirements.txt** file. You should be inside experiment_tracking_and_model_registry directory in both the terminals.
 
 2. In terminal 1, start the MLflow server using the following command :
 
