@@ -12,7 +12,7 @@ I have used Red Wine Quality dataset. It can be found [here](https://www.kaggle.
 
 ## Project Structure
 
-I have made separate directory for each criteria mentioned in README of MLOps Zoomcamp Course Project (https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/07-project)
+I have made separate directory for each criteria mentioned in README of [MLOps Zoomcamp Course Project](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/07-project)
 
 The directories are : 
 
@@ -25,8 +25,8 @@ The directories are :
 
 Each directory has a README file in it which has the instructions on how to run the code. Also, each directory has Pipfile in it. So if you face any issues with virtual environment, you can use the Pipfile to create a new virtual environment.
 
-More information on how to create a virtual environment using Pipfile can be found here : 
-https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-copied-pipfile-inside-a-virtual-environment
+More information on how to create a virtual environment using Pipfile can be found [here](https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-copied-pipfile-inside-a-virtual-environment)
+
 
 
 ## Tools and Technologies Used 
