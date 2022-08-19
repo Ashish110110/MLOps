@@ -35,8 +35,9 @@ This command will :
 * Run unit tests. There might be warnings related to sklearn version. You can ignore that. To configure Python Tests, please refer the video MLOps Zoomcamp 6.1 - Testing Python code with pytest, at time **6:09**
 * Perform quality checks - linting and code formatting. It will reformat batch.py file by using "black"
 * Build docker container and image
-* Create a bucket in Localstack.
+* Create a bucket in Localstack
 * Run integration test. Integration test will output the predicted wine quality and print the contents of bucket present in Localstack (input and output files)
+* Print contents of publish.sh file
 
 Integration test uses Localstack to mimic S3 bucket. Instead of using actual S3 bucket to store and retrieve files, we are using Localstack. It works exactly like S3, but locally. 
 
