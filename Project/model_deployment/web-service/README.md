@@ -4,12 +4,11 @@ This section aims to deploy model as web-service using Flask and Docker. The mod
 
 **NOTE :** I have used SSH terminal for this section. I have provided the Pipfile if you are facing issues with the environment. You can create a virtual environment using Pipfile by running the command : pipenv install
 
-More information on how to create a virtual environment using Pipfile can be found here : 
-https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-copied-pipfile-inside-a-virtual-environment
+More information on how to create a virtual environment using Pipfile can be found [here](https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-copied-pipfile-inside-a-virtual-environment)
 
 ## Steps to run the script in SSH terminal using Flask
 
-1. Open two terminal windows, Terminal 1 and Terminal 2.
+1. Open two terminal windows, Terminal 1 and Terminal 2. Activate virtual environment which has the libraries mentioned in Pipfile. You should be inside web-service directory in both the terminals.
 
 2. In terminal 1, to start the server, execute the following command :
 
