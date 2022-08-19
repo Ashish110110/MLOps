@@ -8,7 +8,7 @@ More information on how to create a virtual environment using Pipfile can be fou
 
 ## Steps to run the script in SSH terminal using Flask
 
-1. Open two terminal windows, Terminal 1 and Terminal 2. Activate virtual environment which has the libraries mentioned in Pipfile. You should be inside web-service directory in both the terminals.
+1. Open two terminal windows, Terminal 1 and Terminal 2. In both the terminals, activate virtual environment which has the libraries mentioned in Pipfile. You should be inside web-service directory in both the terminals.
 
 2. In terminal 1, to start the server, execute the following command :
 
