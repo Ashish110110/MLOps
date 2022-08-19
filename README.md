@@ -1,4 +1,4 @@
-# MLOps
+# MLOps Zoomcamp
 
 This repo consists of solutions of MLOps Zoomcamp by DataTalksClub.
 
