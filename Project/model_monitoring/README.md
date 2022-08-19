@@ -13,7 +13,7 @@ Install Prefect 2.0.1 only after deleting the ".prefect" folder.
 
 ## Steps to execute the script
 
-1. Open 3 SSH terminal windows, terminal 1, terminal 2, terminal 3. Activate virtual environment which has the libraries mentioned in Pipfile. You should be inside model_monitoring directory in all the 3 terminals.
+1. Open 3 SSH terminal windows, terminal 1, terminal 2, terminal 3. In all the terminals, activate virtual environment which has the libraries mentioned in Pipfile. You should be inside model_monitoring directory in all the 3 terminals.
 
 2. In Terminal 1, start the docker services by executing the following command : 
 
