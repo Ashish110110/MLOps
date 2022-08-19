@@ -25,7 +25,7 @@ You should be inside **code** directory. You can give permission to run.sh file 
 
 ### Steps to run unit tests, integration test, linting, and code formatting 
 
-1. Make sure you are inside code directory
+1. Open SSH terminal. Activate virtual environment which has the libraries mentioned in Pipfile. Make sure you are inside **code** directory in the terminal.
 
 2. Execute the following command : 
 
@@ -43,7 +43,7 @@ Integration test uses Localstack to mimic S3 bucket. Instead of using actual S3 
 
 ### Steps to perform pre-commit hooks
 
-1. Make sure you are inside **code** directory
+1. Open SSH terminal. Activate virtual environment which has the libraries mentioned in Pipfile. Make sure you are inside **code** directory in the terminal.
 
 2. Initialize empty Git repository by running the following command : 
 
