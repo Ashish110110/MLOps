@@ -4,8 +4,7 @@ This section aims to monitor ML models using Evidently, Grafana, Prometheus and 
 
 **NOTE :** I have used SSH terminal for this section. I have provided the Pipfile if you are facing issues with the environment. You can create a virtual environment using Pipfile by running the command : pipenv install
 
-More information on how to create a virtual environment using Pipfile can be found here : 
-https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-copied-pipfile-inside-a-virtual-environment
+More information on how to create a virtual environment using Pipfile can be found [here](https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-copied-pipfile-inside-a-virtual-environment)
 
 **NOTE : ** I have used **Prefect 2.0.1** while working on this project. Please make sure the Prefect version in your virtual environment is **2.0.1**. Also, before installing Prefect 2.0.1, **delete the ".prefect" folder** from your SSH. It can be found at **"/home/ububtu/.prefect"**
 
@@ -14,7 +13,7 @@ Install Prefect 2.0.1 only after deleting the ".prefect" folder.
 
 ## Steps to execute the script
 
-1. Open 3 SSH terminal windows, terminal 1, terminal 2, terminal 3.
+1. Open 3 SSH terminal windows, terminal 1, terminal 2, terminal 3. You should be inside model_monitoring directory in all the 3 terminals.
 
 2. In Terminal 1, start the docker services by executing the following command : 
 
