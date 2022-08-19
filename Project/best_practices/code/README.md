@@ -12,8 +12,7 @@ For pre-commit hooks, **.pre-commit-config.yaml** is used
 
 **NOTE :** I have used SSH terminal for this section. I have provided the Pipfile if you are facing issues with the environment. You can create a virtual environment using Pipfile by running the command : pipenv install
 
-More information on how to create a virtual environment using Pipfile can be found here : 
-https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-copied-pipfile-inside-a-virtual-environment
+More information on how to create a virtual environment using Pipfile can be found [here](https://stackoverflow.com/questions/52171593/how-to-install-dependencies-from-a-copied-pipfile-inside-a-virtual-environment)
 
 **NOTE :** integration-test folder has **run.sh** file. You need to give permission before running it, or else you will get permission denied error.
 
