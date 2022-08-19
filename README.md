@@ -47,3 +47,7 @@ Course Link : https://github.com/DataTalksClub/mlops-zoomcamp
 * Pre-commit hooks and makefiles
 * CI/CD (Github Actions)
 * Infrastructure as Code (Terraform)
+
+## Project
+
+End-to-End project with all the things above
