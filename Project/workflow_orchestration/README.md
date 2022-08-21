@@ -92,7 +92,7 @@ If you want to schedule deployments instead of deploying on the spot, then befor
 
         prefect deployment apply main-deployment.yaml
 
-This command will create the deployment on the API with tag "mlops-project-orchestration" (from step 3)
+This command will create the deployment on the API with name "mlops-prefect-aws-deployment" and tag "mlops-project-orchestration" (from step 3)
 
 5. To view the deployments, run the following command in Terminal 2 :
 
