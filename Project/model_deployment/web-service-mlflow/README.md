@@ -25,13 +25,13 @@ Please enter the credentials above before running the scripts.
 
 2. In Terminal 1, type the following command :
 
-   **Command :** mlflow server --backend-store-uri=sqlite:///mlflow.db --default-artifact-root=s3://{bucket-name}/
+       mlflow server --backend-store-uri=sqlite:///mlflow.db --default-artifact-root=s3://{bucket-name}/
 
 Replace {bucket-name} with the name of bucket you created in your AWS account earlier. 
 
 For example, if you create a bucket "mlops-zoomcamp-project", the command should look like : 
 
-mlflow server --backend-store-uri=sqlite:///mlflow.db --default-artifact-root=s3://mlops-zoomcamp-project/
+        mlflow server --backend-store-uri=sqlite:///mlflow.db --default-artifact-root=s3://mlops-zoomcamp-project/
 
 **NOTE :** The server in terminal 1 should keep running, and you should go to terminal 2 to execute other scripts.
 
@@ -43,9 +43,13 @@ RUN_ID can be found at : Amazon S3 > Buckets > {bucket-which-you-created-earlier
 
 For example, if bucket name is "mlops-zoomcamp-project", RUN_ID can be found at : Amazon S3 > Buckets > mlops-zoomcamp-project > 1/ > {RUN_ID}.
 
-5. Open Terminal 2, and export the RUN_ID you got from step 4. If RUN_ID is 123456, then it can be exported via the following command : 
+5. Open Terminal 2, and export the RUN_ID you got from step 4. Export the RUN_ID by running the following command : 
 
-   **Command :** export RUN_ID="123456"
+       export RUN_ID="run-id"
+   
+   If RUN_ID is 123456, then it can be exported via the following command : 
+   
+       export RUN_ID="123456"
 
 6. Before running predict.py, you need to enter the name of your bucket which you created earlier. **Go to line number 9 of predict.py**, and enter the name of your S3 bucket. 
 
@@ -55,7 +59,7 @@ logged_model = f's3://mlops-zoomcamp-project/1/{RUN_ID}/artifacts/model'
 
 7. Now in Terminal 2, after exporting the RUN_ID and entering bucket name in predict.py, execute the following command : 
 
-   **Command :** python predict.py
+       python predict.py
 
 This command will start the server, which waits for incoming data.
 
@@ -63,7 +67,7 @@ This command will start the server, which waits for incoming data.
 
 8. Open Terminal 3, and execute the following command : 
 
-   **Command :** python test.py
+       python test.py
 
 This command will send numerical features (total_sulfur_dioxide, free_sulfur_dioxide, alcohol, volatile_acidity) to the server, and print the model version which has been trained and logged in MLflow and your S3 bucket. It will also print the predicted wine quality based on the features we have sent. You can edit the numerical features in test.py, if you wish.
 
