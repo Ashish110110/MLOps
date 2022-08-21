@@ -80,6 +80,7 @@ This will start Prefect. Let the service be running in this terminal. Go to Term
 This command will :
 
 * Generate the main-manifest.json and main-deployment.yaml files for the deployment based on my flow code and options.
+* Create flow and flow runs
 * Create a block "mlops-project-block". This block stores data as files in S3 bucket. You can see the files in your S3 bucket(the bucket which you created earlier).    Refresh the website if the files aren't visible. 
 * Uploads the flow files to the configured storage location. In my case, it will upload to S3 bucket.
 
