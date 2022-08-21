@@ -34,9 +34,9 @@ This command will build a Docker image "red-wine-prediction" from the Dockerfile
 
 **NOTE :** Do not forget to include the "." at the end of Command-1
 
-       docker run -it --rm -p 9696:9696 red-wine-prediction:v1
+3. After the image is built, start the gunicorn server by running the following command in terminal 1 : 
 
-This command will start the gunicorn server. 
+       docker run -it --rm -p 9696:9696 red-wine-prediction:v1
 
 **NOTE :** The services should keep running, and you should go to terminal 2 to execute the test script.
 
