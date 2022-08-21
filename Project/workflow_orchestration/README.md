@@ -110,7 +110,7 @@ Enter the name of work queue. If the name is "red-wine-quality", then the comman
 
         prefect work-queue create red-wine-quality
 
-This will create a work queue and print its details (name, uuid, tags, concurrency limit) in the terminal. If you see that work queue in Prefect UI (**http://127.0.0.1:4200**), you will see upcoming runs. Those will be either "scheduled" or "late" depending on the interval you have set in yaml file. 
+This will create a work queue and print its details (name, uuid, tags, concurrency limit) in the terminal. If you open the work queue in Prefect UI (**http://127.0.0.1:4200**), you will see upcoming runs. Those will be either "scheduled" or "late" depending on the interval you have set in yaml file. 
 
 7. Now, to deploy the flow runs present in work queue, you need to start an agent. Agent processes are lightweight polling services that get scheduled work from a work queue and deploy the corresponding flow runs. In Terminal 2, run the following command : 
 
