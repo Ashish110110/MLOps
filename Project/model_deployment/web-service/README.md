@@ -12,13 +12,13 @@ More information on how to create a virtual environment using Pipfile can be fou
 
 2. In terminal 1, to start the server, execute the following command :
 
-   **Command :** python predict.py
+       python predict.py
 
 **NOTE :** The server should keep running, and you should go to terminal 2 to execute the test script.
 
 1. In terminal 2, execute the following command :
 
-   **Command :** python test.py
+       python test.py
 
 This will send numerical features (total_sulfur_dioxide, free_sulfur_dioxide, alcohol, volatile_acidity) to the server, and server will send predicted wine quality based on the features. You can edit the numerical features in test.py, if you wish.
 
@@ -28,13 +28,13 @@ This will send numerical features (total_sulfur_dioxide, free_sulfur_dioxide, al
 
 2. Here, we are using docker to run the model. The code is containerized. In terminal 1, execute the following commands :
 
-   **Command-1 :** docker build -t red-wine-prediction:v1 .
+       docker build -t red-wine-prediction:v1 .
 
 This command will build a Docker image "red-wine-prediction" from the Dockerfile.
 
 **NOTE :** Do not forget to include the "." at the end of Command-1
 
-**Command-2 :** docker run -it --rm -p 9696:9696 red-wine-prediction:v1
+       docker run -it --rm -p 9696:9696 red-wine-prediction:v1
 
 This command will start the gunicorn server. 
 
@@ -42,7 +42,7 @@ This command will start the gunicorn server.
 
 3. To get response from the server, execute the following command in terminal 2 : 
 
-   **Command :** python test.py
+       python test.py
 
 This will send numerical features (total_sulfur_dioxide, free_sulfur_dioxide, alcohol, volatile_acidity) to the server, and server will send predicted wine quality based on the features. You can edit the numerical features in test.py, if you wish.
 
