@@ -118,7 +118,7 @@ This will create a work queue and print its details (name, uuid, tags, concurren
    
 "uuid" is printed when you create work queue, as mentioned in previous step. If uuid is '123456789', then the command should look like :
   
-    prefect agent start '123456789'
+        prefect agent start '123456789'
 
 The above command will start an agent. Agent deploys flow runs present in work queue. 
 
