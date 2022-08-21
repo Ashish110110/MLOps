@@ -106,7 +106,7 @@ The next steps are related to scheduled deployments, agents, and work queues. If
 
         prefect work-queue create {work-queue-name}
  
-Enter the name of work queue. If the name is "red-wine-quality:, then the command should look like :
+Enter the name of work queue. If the name is "red-wine-quality", then the command should look like :
 
         prefect work-queue create red-wine-quality
 
