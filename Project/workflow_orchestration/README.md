@@ -84,7 +84,7 @@ This command will :
 * Create a block "mlops-project-block". This block stores data as files in S3 bucket. You can see the files in your S3 bucket(the bucket which you created earlier).    Refresh the website if the files aren't visible. 
 * Uploads the flow files to the configured storage location. In my case, it will upload to S3 bucket.
 
-**NOTE :** Prefect is off beta now, and in stable version of Prefect (version 2.0.1 and above), they have removed the DeploymentSpec function, which we used in Prefect beta(as shown in videos). DeploymentSpec function was present in beta versions of Prefect(2.0b). It allowed us to mention a schedule for agents (Interval, Cron schedule) in our code itself. Now, if we want to schedule deployments, we have to either do it through UI or make some changes in the main-deployment.yaml file. 
+**NOTE :** Prefect is off beta now, and in stable version of Prefect (version 2.0.1 and above), the DeploymentSpec function has been removed, which we used in Prefect beta(as shown in videos). DeploymentSpec function was present in beta versions of Prefect(2.0b). It allowed us to mention a schedule for agents (Interval, Cron schedule) in our code itself. Now, if we want to schedule deployments, we have to either do it through UI or make some changes in the main-deployment.yaml file. 
 
 If you want to schedule deployments instead of deploying on the spot, then before proceeding to the next step, please make some changes in the main-deployment.yaml file. Steps to add schedule to yaml file can be found [here](https://orion-docs.prefect.io/concepts/schedules/)
 
