@@ -73,13 +73,15 @@ If your S3 bucket name is mlops-zoomcamp-project, the command should look like :
 
 **NOTE :** If you use other AWS profile other than "default", then please go to **line number 12** of hpo.py and change the os.environ["AWS_PROFILE"] variable to your profile name before executing the script. If the profile name is "user1", then line number 12 should look like : os.environ["AWS_PROFILE"] = "user1"
 
-6. After the execution of step-4 is finished, execute the script register_model.py in terminal 2. This script will promote the best model (with lowest test_rmse) to the model registry. It will check the results from the previous step and select the top 5 runs. After that, it will calculate the RMSE of those models on the test set and save the results to a new experiment called "red-wine-random-forest-best-models". 
+6. After the execution of step-4 is finished, execute the script register_model.py in terminal 2. Run the script using the following command :
+
+       python register_model.py
+   
+This script will promote the best model (with lowest test_rmse) to the model registry. It will check the results from the previous step and select the top 5 runs. After that, it will calculate the RMSE of those models on the test set and save the results to a new experiment called "red-wine-random-forest-best-models". 
 
 For model registry, out of the 5 runs in "red-wine-random-forest-best-models" experiment, the run with lowest test_rmse is registered. You can view the registered model at **http://127.0.0.1:5000/#/models** 
 
-The script logs the parameters and artifacts in MLflow(locally) as well as logs the artifacts in S3 bucket(cloud). Run the script using the following command :
-
-       python register_model.py
+The script logs the parameters and artifacts in MLflow(locally) as well as logs the artifacts in S3 bucket(cloud).
 
 **NOTE :** If you use other AWS profile other than "default", then please go to **line number 13** of register_model.py and change the os.environ["AWS_PROFILE"] variable to your profile name before executing the script. If the profile name is "user1", then line number 13 should look like : os.environ["AWS_PROFILE"] = "user1"
 
