@@ -30,8 +30,7 @@ It will ask you for your :
 
 Please enter the credentials above before running the scripts.
 
-These credentials have profile name as "default". I recommend to use your default AWS profile for running the scripts so that you won't need to make any changes in the python scripts provided. However, if you wish to use any other AWS profile other than the "default" one, then please make changes in credentials and config files accordingly. These files are located at **~/.aws/credentials** for Linux and Mac and at **%USERPROFILE%\.aws\credentials** for Windows. More information on setting up profile can be found at : 
-https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html
+These credentials have profile name as "default". I recommend to use your default AWS profile for running the scripts so that you won't need to make any changes in the python scripts provided. However, if you wish to use any other AWS profile other than the "default" one, then please make changes in credentials and config files accordingly. These files are located at **~/.aws/credentials** for Linux and Mac and at **%USERPROFILE%\.aws\credentials** for Windows. More information on setting up profile can be found [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
 
 If you use any other AWS profile other than "default", then you will have to make some changes in train.py, hpo.py and register_model.py. These changes are discussed later in this document.
 
