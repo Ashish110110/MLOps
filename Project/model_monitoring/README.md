@@ -15,21 +15,21 @@ Install Prefect 2.0.1 only after deleting the ".prefect" folder.
 
 1. Open 3 SSH terminal windows, terminal 1, terminal 2, terminal 3. In all the terminals, activate virtual environment which has the libraries mentioned in Pipfile. You should be inside model_monitoring directory in all the 3 terminals.
 
-2. In Terminal 1, start the docker services by executing the following command : 
+2. In Terminal 1, start the docker services by executing the following command :
 
-   **Command :** docker-compose up
+       docker-compose up
 
 **NOTE :** The services should keep running, and you should go to terminal 2 to execute the scripts.
 
 3. Download the dataset. Execute the following command in Terminal 2 : 
 
-   **Command :** python prepare.py
+        python prepare.py
 
 4. For the next step, please make sure that all the services from Step-2 are up and running.
 
 5. After the dataset is downloaded, we need to send the data from the downloaded dataset to the prediction service. Execute the following command in Terminal 2 : 
 
-   **Command :** python send_data.py
+        python send_data.py
 
 This script will send single row from dataset to prediction service (every second) along with creating the file **target.csv** with actual results (so it can be loaded after). To keep it simple, instead of sending all the data from the dataset, I am sending only 100 rows of data. You don't need to stop the script yourself, it will exit automatically after it has sent 100 rows of data.
 
@@ -40,13 +40,13 @@ You can also view the Prometheus database at **http://localhost:9091/** . This i
 
 7. After the data is sent, execute the following command in Terminal 2 : 
 
-   **Command :** prefect orion start
+        prefect orion start
 
 This will start Prefect. It can be viewed at **http://localhost:4200/** Go to terminal 3, to execute prefect_example.py.
 
 8. In Terminal 3, execute prefect_example.py script by running the following command :
 
-   **Command :** python prefect_example.py
+        python prefect_example.py
 
 This script will :
 
