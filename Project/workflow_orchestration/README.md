@@ -66,18 +66,17 @@ Open 3 SSH terminal windows, Terminal 1, Terminal 2, Terminal 3. In all the term
 
 1. In Terminal 1, execute the following command : 
 
-   **Command :** prefect orion start
+        prefect orion start
 
 This will start Prefect. Let the service be running in this terminal. Go to Terminal 2, to execute other commands.
 
 2. In Terminal 2, run the following command : 
 
-   **Command :** prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api
+        prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api
 
 3. In Terminal 2, run the following command : 
-
-   **Command** : 
-prefect deployment build ./orchestration.py:main --name "mlops-prefect-aws-deployment" --storage-block s3/mlops-project-block -t mlops-project-orchestration
+ 
+        prefect deployment build ./orchestration.py:main --name "mlops-prefect-aws-deployment" --storage-block s3/mlops-project-block -t mlops-project-orchestration
 
 This command will :
 
@@ -91,13 +90,13 @@ If you want to schedule deployments instead of deploying on the spot, then befor
 
 4. In Terminal 2, run the following command :
 
-   **Command :** prefect deployment apply main-deployment.yaml
+        prefect deployment apply main-deployment.yaml
 
 This command will create the deployment on the API with tag "mlops-project-orchestration" (from step 3)
 
 5. In Terminal 2, run the following command :
 
-   **Command :** prefect deployment ls
+        prefect deployment ls
 
 Once the deployment has been created, you'll see it in the Prefect UI (**http://127.0.0.1:4200**) and can inspect it using in the CLI by running the above command.
 
@@ -105,13 +104,17 @@ The next steps are related to scheduled deployments, agents, and work queues. If
 
 6. Create a work queue. Run the following command in terminal 2 :
 
-   **Command :** prefect work-queue create red-wine-quality
+        prefect work-queue create {work-queue-name}
+ 
+Enter the name of work queue. If the name is "red-wine-quality:, then the command should look like :
+
+        prefect work-queue create red-wine-quality
 
 This will create a work queue and print its details (name, uuid, tags, concurrency limit) in the terminal. If you see that work queue in Prefect UI (**http://127.0.0.1:4200**), you will see upcoming runs. Those will be either "scheduled" or "late" depending on the interval you have set in yaml file. 
 
 7. Now, to deploy the flow runs present in work queue, you need to start an agent. Agent processes are lightweight polling services that get scheduled work from a work queue and deploy the corresponding flow runs. In Terminal 2, run the following command : 
 
-   **Command :** prefect agent start 'uuid'
+        prefect agent start 'uuid'
    
 "uuid" is printed when you create work queue, as mentioned in previous step. If uuid is '123456789', then the command should look like :
   
