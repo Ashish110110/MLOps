@@ -61,15 +61,19 @@ If your S3 bucket name is mlops-zoomcamp-project, the command should look like :
 
        python preprocess.py
 
-4. Make sure the server from step-1 is up and running. After the execution of step-2 is finished, execute the script train.py in terminal 2. The script will load the datasets produced by the previous step, train the model on the training set and calculates the RMSE on the validation set. The script logs the parameters and artifacts in MLflow(locally) as well as logs the artifacts in S3 bucket(cloud). Run the script using the following command : 
+4. Make sure the server from step-1 is up and running. After the execution of step-2 is finished, execute the script train.py in terminal 2. Run the script using the following command : 
 
        python train.py
+       
+The script will load the datasets produced by the previous step, train the model on the training set and calculates the RMSE on the validation set. The script logs the parameters and artifacts in MLflow(locally) as well as logs the artifacts in S3 bucket(cloud). 
 
 **NOTE :** If you use other AWS profile other than "default", then please go to **line number 9** of train.py and change the os.environ["AWS_PROFILE"] variable to your profile name before executing the script. If the profile name is "user1", then line number 9 should look like : os.environ["AWS_PROFILE"] = "user1"
 
-5. After the execution of step-3 is finished, execute the script hpo.py in terminal 2. This script tries to reduce the validation error by tuning the hyperparameters of the random forest regressor using hyperopt. The script logs the parameters and artifacts in MLflow(locally) as well as logs the artifacts in S3 bucket(cloud). Run the script using the following command :
+5. After the execution of step-3 is finished, execute the script hpo.py in terminal 2. Run the script using the following command :
 
        python hpo.py
+       
+This script tries to reduce the validation error by tuning the hyperparameters of the random forest regressor using hyperopt. The script logs the parameters and artifacts in MLflow(locally) as well as logs the artifacts in S3 bucket(cloud).
 
 **NOTE :** If you use other AWS profile other than "default", then please go to **line number 12** of hpo.py and change the os.environ["AWS_PROFILE"] variable to your profile name before executing the script. If the profile name is "user1", then line number 12 should look like : os.environ["AWS_PROFILE"] = "user1"
 
@@ -87,6 +91,6 @@ The script logs the parameters and artifacts in MLflow(locally) as well as logs 
 
 Experiments and models(and artifacts) can be viewed locally at http://127.0.0.1:5000 Registered model can also be viewed at http://127.0.0.1:5000/#/models
 
-To view the artifacts on cloud, please visit your AWS S3 bucket. Your bucket will have 3 folders named "1/", "2/", and "3/". These 3 folders will have artifacts of the models which were logged by running the 3 scripts train.py, hpo.py, and register_model.py respectively. Refresh the website if these folders are not visible in your S3 bucket.
+To view the artifacts on cloud, please visit your AWS S3 bucket. The bucket will have 3 folders named "1/", "2/", and "3/". These 3 folders will have artifacts of the models which were logged by running the 3 scripts train.py, hpo.py, and register_model.py respectively. Refresh the website if these folders are not visible in your S3 bucket.
 
 Images of experiments and registered model from MLflow and S3 bucket which stores artifacts, are saved to "results" folder for reference.
