@@ -1,6 +1,6 @@
 # MLOps Zoomcamp
 
-This repo consists of solutions of MLOps Zoomcamp by DataTalksClub.
+This repo consists of solutions of MLOps Zoomcamp by DataTalks.Club
 
 Course Link : https://github.com/DataTalksClub/mlops-zoomcamp
 
