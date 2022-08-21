@@ -36,7 +36,7 @@ This command will :
 * Perform quality checks - linting and code formatting. It will reformat batch.py file by using "black"
 * Build docker container and image
 * Create a bucket in Localstack
-* Run integration test. Integration test will output the predicted wine quality and print the contents of bucket present in Localstack (input and output files)
+* Run integration test. Integration test will output the predicted wine quality and print the contents of Localstack (input and output files)
 * Print contents of publish.sh file
 
 Integration test uses Localstack to mimic S3 bucket. Instead of using actual S3 bucket to store and retrieve files, we are using Localstack. It works exactly like S3, but locally. 
