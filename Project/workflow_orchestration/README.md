@@ -94,7 +94,7 @@ If you want to schedule deployments instead of deploying on the spot, then befor
 
 This command will create the deployment on the API with tag "mlops-project-orchestration" (from step 3)
 
-5. In Terminal 2, run the following command :
+5. To view the deployments, run the following command in Terminal 2 :
 
         prefect deployment ls
 
