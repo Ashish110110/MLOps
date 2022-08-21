@@ -18,7 +18,7 @@ More information on how to create a virtual environment using Pipfile can be fou
 
 You should be inside **code** directory. You can give permission to run.sh file by executing the following command in SSH terminal : 
 
-**Command :** chmod +x integration-test/run.sh
+      chmod +x integration-test/run.sh
 
 **IMPORTANT-NOTE :** Before running the commands, go to **run.sh** file present inside **integration-test** directory. In line number 18, edit the **AWS_DEFAULT_REGION** variable and enter your default region according to your AWS account. 
 
