@@ -49,27 +49,27 @@ If you use any other AWS profile other than "default", then you will have to mak
 
 2. In terminal 1, start the MLflow server using the following command :
 
-   **Command :** mlflow server --backend-store-uri=sqlite:///mlflow.db --default-artifact-root=s3://{bucket-name}/
+       mlflow server --backend-store-uri=sqlite:///mlflow.db --default-artifact-root=s3://{bucket-name}/
 
 If your S3 bucket name is mlops-zoomcamp-project, the command should look like : 
 
-mlflow server --backend-store-uri=sqlite:///mlflow.db --default-artifact-root=s3://mlops-zoomcamp-project/
+       mlflow server --backend-store-uri=sqlite:///mlflow.db --default-artifact-root=s3://mlops-zoomcamp-project/
 
 **NOTE :** The server should keep running, and you should go to terminal 2 to execute the scripts.
 
 3. Go to terminal 2, and execute the script preprocess.py. This script loads the raw data from input folder, preprocesses it and saves the pre-processed data in output folder. Run the script using the following command : 
 
-   **Command :** python preprocess.py
+       python preprocess.py
 
 4. Make sure the server from step-1 is up and running. After the execution of step-2 is finished, execute the script train.py in terminal 2. The script will load the datasets produced by the previous step, train the model on the training set and calculates the RMSE on the validation set. The script logs the parameters and artifacts in MLflow(locally) as well as logs the artifacts in S3 bucket(cloud). Run the script using the following command : 
 
-   **Command :** python train.py
+       python train.py
 
 **NOTE :** If you use other AWS profile other than "default", then please go to **line number 9** of train.py and change the os.environ["AWS_PROFILE"] variable to your profile name before executing the script. If the profile name is "user1", then line number 9 should look like : os.environ["AWS_PROFILE"] = "user1"
 
 5. After the execution of step-3 is finished, execute the script hpo.py in terminal 2. This script tries to reduce the validation error by tuning the hyperparameters of the random forest regressor using hyperopt. The script logs the parameters and artifacts in MLflow(locally) as well as logs the artifacts in S3 bucket(cloud). Run the script using the following command :
 
-   **Command :** python hpo.py
+       python hpo.py
 
 **NOTE :** If you use other AWS profile other than "default", then please go to **line number 12** of hpo.py and change the os.environ["AWS_PROFILE"] variable to your profile name before executing the script. If the profile name is "user1", then line number 12 should look like : os.environ["AWS_PROFILE"] = "user1"
 
@@ -79,7 +79,7 @@ For model registry, out of the 5 runs in "red-wine-random-forest-best-models" ex
 
 The script logs the parameters and artifacts in MLflow(locally) as well as logs the artifacts in S3 bucket(cloud). Run the script using the following command :
 
-**Command :** python register_model.py
+       python register_model.py
 
 **NOTE :** If you use other AWS profile other than "default", then please go to **line number 13** of register_model.py and change the os.environ["AWS_PROFILE"] variable to your profile name before executing the script. If the profile name is "user1", then line number 13 should look like : os.environ["AWS_PROFILE"] = "user1"
 
