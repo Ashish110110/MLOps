@@ -50,8 +50,8 @@ This will start Prefect. It can be viewed at **http://localhost:4200/** Go to te
 
 This script will :
 
-* load target.csv to MongoDB
-* download dataset from MongoDB
+* Load target.csv to MongoDB
+* Download dataset from MongoDB
 * Run Evidently Model Profile and Evidently Report on this data
 * Save Profile data back to MongoDB
 * Save Report to evidently_report_example.html
