@@ -40,7 +40,7 @@ This command will build a Docker image "red-wine-prediction" from the Dockerfile
 
 **NOTE :** The services should keep running, and you should go to terminal 2 to execute the test script.
 
-3. To get response from the server, execute the following command in terminal 2 : 
+4. To get response from the server, execute the following command in terminal 2 : 
 
        python test.py
 
