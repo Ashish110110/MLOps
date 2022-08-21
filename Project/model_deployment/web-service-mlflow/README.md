@@ -27,7 +27,7 @@ Please enter the credentials above before running the scripts.
 
    **Command :** mlflow server --backend-store-uri=sqlite:///mlflow.db --default-artifact-root=s3://{bucket-name}/
 
-Replace {bucket-name} with the name of bucket you created in your AWS account in step 1. 
+Replace {bucket-name} with the name of bucket you created in your AWS account earlier. 
 
 For example, if you create a bucket "mlops-zoomcamp-project", the command should look like : 
 
