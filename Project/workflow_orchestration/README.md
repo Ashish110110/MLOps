@@ -21,6 +21,10 @@ If no storage is explicitly configured, Prefect will use LocalFileSystem storage
 
 Blocks are a primitive within Prefect that enable the storage of configuration and provide an interface for interacting with external systems. Blocks are useful for configuration that needs to be shared across flow runs and between flows.
 
+**Prefect Agents and Work Queues**
+
+Agents and work queues bridge the Prefect Orion orchestration environment with a user’s execution environment. When a deployment creates a flow run, it is submitted to a specific work queue for scheduling. Agents running in the execution environment poll their respective work queues for new runs to execute. Work queues are automatically created whenever they are referenced by either a deployment or an agent.
+
 ***********************************************************************************************************************************************************************
 
 Before running any commands, **please create a S3 bucket in your AWS account**. The script will save data files to this S3 bucket.
@@ -97,23 +101,28 @@ This command will create the deployment on the API with tag "mlops-project-orche
 
 Once the deployment has been created, you'll see it in the Prefect UI (**http://127.0.0.1:4200**) and can inspect it using in the CLI by running the above command.
 
-6. In Terminal 2, run the following command : 
+The next steps are related to scheduled deployments, agents, and work queues. If you wish to see scheduled deployments, then make changes in yaml file as mentioned earlier. 
 
-   **Command :** prefect agent start -t mlops-project-orchestration
+6. Create a work queue. Run the following command in terminal 2 :
 
-The above command creates a work queue and starts an agent and looks for work from queue. 
+   **Command :** prefect work-queue create red-wine-quality
 
-**NOTE :** If you have scheduled the deployments, then you can see the execution of flow in terminal 2 at periodic interval as mentioned in schedule in main-deployment.yaml file.
+This will create a work queue and print its details (name, uuid, tags, concurrency limit) in the terminal. If you see that work queue in Prefect UI (**http://127.0.0.1:4200**), you will see upcoming runs. Those will be either "scheduled" or "late" depending on the interval you have set in yaml file. 
 
-7. Keep the service running in Terminal 2. Go to Terminal 3 and execute the following command : 
+7. Now, to deploy the flow runs present in work queue, you need to start an agent. Agent processes are lightweight polling services that get scheduled work from a work queue and deploy the corresponding flow runs. In Terminal 2, run the following command : 
 
-   **Command :** prefect deployment run main/mlops-prefect-aws-deployment
+   **Command :** prefect agent start 'uuid'
+   
+"uuid" is printed when you create work queue, as mentioned in previous step. If uuid is '123456789', then the command should look like :
+  
+    prefect agent start '123456789'
 
-**NOTE :** At the time of working on this section of the project, the documentation of Prefect 2.0.1 stated that Schedules will be added later and hence, the work queue might be empty, i.e., without any upcoming runs. Prefect is off beta now, and in stable version of Prefect (version 2.0.1 and above), they have removed the DeploymentSpec function, which we used in Prefect beta(as shown in videos). DeploymentSpec function was present in beta versions of Prefect(2.0b). It allowed us to mention a schedule for agents (Interval, Cron schedule) in our code itself. Now, if we want to schedule deployments, we have to either do it through UI or make some changes in the main-deployment.yaml file. 
+The above command will start an agent. Agent deploys flow runs present in work queue. 
 
-If you wish to see scheduled deployments, either through UI or by making changes in the main-deployment.yaml file, then please visit this link :
-https://orion-docs.prefect.io/concepts/schedules/
+If you have scheduled the deployments, then you can see the deployment of flow runs in terminal 2 at periodic interval as mentioned in schedule in main-deployment.yaml file.
+
+After the agent has started, the work queue will be empty. The work queue will have "scheduled" or "late" flow runs until an agent is started.
 
 Flows, deployments, blocks and work queues can be viewed at : http://127.0.0.1:4200
 
-Screenshots of flows, deployment, work queues, block, storage and S3 bucket are stored in "results" folder for reference.
+Screenshots of flows, deployment, agents, work queues, block, storage and S3 bucket are stored in "results" folder for reference.
