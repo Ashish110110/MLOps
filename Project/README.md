@@ -38,3 +38,6 @@ More information on how to create a virtual environment using Pipfile can be fou
 * Model Deployment : Deployment as web service using Flask, Docker, MLflow and AWS
 * Model Monitoring : Evidently AI, Grafana and Prometheus
 * Best Practices : Linting, Code Formatting, Makefile and Pre-commit hooks
+
+
+**NOTE :** For peer reviewing process, please download the repository as zip file instead of cloning it using Git bash. You will run into issues while reviewing best_practices section of the project if you clone the repository.
