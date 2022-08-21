@@ -28,7 +28,7 @@ You should be inside **code** directory. You can give permission to run.sh file 
 
 2. Execute the following command : 
 
-   **Command :** make publish
+       make publish
 
 This command will : 
 
@@ -47,25 +47,25 @@ Integration test uses Localstack to mimic S3 bucket. Instead of using actual S3 
 
 2. Initialize empty Git repository by running the following command : 
 
-   **Command :** git init
+       git init
 
 3. Install pre-commit by running the following command : 
 
-   **Command :** pre-commit install
+       pre-commit install
 
 4. Check status of files by running the following command :
 
-   **Command :** git status
+       git status
 
 5. Add all the files by running the following command :
 
-   **Command :** git add .
+       git add .
 
 **NOTE :** Make sure "." is added at the end of above command
 
 6. Commit the files by running the following command :
 
-   **Command :** git commit -m 'initial commit'
+       git commit -m 'initial commit'
 
 Here, either all tests will pass or some tests will fail. If you have already executed the command *make publish*, then all tests should pass. If not, then some tests will fail, but those files will be reformatted by pre-commit. Repeat Steps 4, 5, and 6 to add the files modified by pre-commit. 
 
