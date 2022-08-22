@@ -34,4 +34,4 @@ The output variable (based on sensory data) :
 
 12 - quality (score between 0 and 10)
 
-**NOTE :** Since the dataset consists of only single csv file, I have manually partitioned it in two files, red_wine_train.csv and red_wine_val.csv for training and validation purposes. 
+**NOTE :** Since the dataset consists of only single csv file, I have manually partitioned it in two files, red_wine_train.csv and red_wine_val.csv for training and validation purposes. I have renamed some coulmns of winequality.csv, so as to save time in data processing in each section of the project.
