@@ -75,6 +75,10 @@ This command will start the server, which waits for incoming data.
 
 This command will send numerical features (total_sulfur_dioxide, free_sulfur_dioxide, alcohol, volatile_acidity) to the server, and print the model version which has been trained and logged in MLflow and your S3 bucket. It will also print the predicted wine quality based on the features we have sent. You can edit the numerical features in test.py, if you wish.
 
+**NOTE :** If you encounter **connection in use** error while running MLflow, the run the following command in terminal :
+
+    pkill gunicorn
+
 You can view the logged model in MLflow (http://127.0.0.1:5000) as well as in the S3 bucket you created earlier.
 
 Screenshots of MLflow, S3 bucket and logs of SSH terminal are saved in "results" folder for reference.
