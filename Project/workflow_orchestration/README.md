@@ -63,6 +63,10 @@ For example if AWS_ACCESS_KEY_ID is abc and AWS_SECRET_ACCESS_KEY is xyz, the va
 
 Open 3 SSH terminal windows, Terminal 1, Terminal 2, Terminal 3. In all the terminals, activate virtual environment which has the libraries mentioned in Pipfile. You should be inside workflow_orchestration directory in all the 3 terminals.
 
+Activate the virtual environment by running the following command in SSH terminal :
+
+      pipenv shell
+
 1. In Terminal 1, execute the following command : 
 
         prefect orion start
