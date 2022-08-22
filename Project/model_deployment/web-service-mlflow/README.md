@@ -21,7 +21,11 @@ Please enter the credentials above before running the scripts.
 
 ## Steps to execute the script
 
-1. Open 3 terminal windows. Terminal 1, Terminal 2, and Terminal 3. In all the terminals, activate virtual environment which has the libraries mentioned in Pipfile. You should be inside web-service-mlflow directory in all the 3 terminals.
+1. Open 3 terminal windows. Terminal 1, Terminal 2, and Terminal 3. In all the terminals, activate virtual environment which has the libraries mentioned in Pipfile. You should be inside web-service-mlflow directory in all the 3 terminals. 
+
+Activate the virtual environment by running the following command in SSH terminal :
+
+      pipenv shell
 
 2. In Terminal 1, type the following command :
 
