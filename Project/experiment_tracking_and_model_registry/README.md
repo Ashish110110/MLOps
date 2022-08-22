@@ -91,7 +91,8 @@ The script logs the parameters and artifacts in MLflow(locally) as well as logs 
 **NOTE :** If you use other AWS profile other than "default", then please go to **line number 13** of register_model.py and change the os.environ["AWS_PROFILE"] variable to your profile name before executing the script. If the profile name is "user1", then line number 13 should look like : os.environ["AWS_PROFILE"] = "user1"
 
 **NOTE :** If you encounter **connection in use** error while running MLflow, the run the following command in terminal :
-      pkill gunicorn
+
+    pkill gunicorn
 
 Experiments and models(and artifacts) can be viewed locally at http://127.0.0.1:5000 Registered model can also be viewed at http://127.0.0.1:5000/#/models
 
