@@ -10,6 +10,10 @@ More information on how to create a virtual environment using Pipfile can be fou
 
 1. Open two terminal windows, Terminal 1 and Terminal 2. In both the terminals, activate virtual environment which has the libraries mentioned in Pipfile. You should be inside web-service directory in both the terminals.
 
+Activate the virtual environment by running the following command in SSH terminal :
+
+      pipenv shell
+
 2. In terminal 1, to start the server, execute the following command :
 
        python predict.py
