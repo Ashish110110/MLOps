@@ -36,15 +36,17 @@ If you use any other AWS profile other than "default", then you will have to mak
 
 **NOTE :** I have used Anaconda Prompt for this section instead of SSH terminal because I was having issues with sklearn version in SSH terminal. If you face any errors while running the script, please consider creating a new environment using the requirements.txt file.
 
-### Steps to create anaconda environment
+### Steps to create and activate anaconda environment
 
 1. conda create -n test_env python=3.9
 
-2. pip install -r requirements.txt
+2. conda activate test_env
+
+3. pip install -r requirements.txt
 
 ### Steps to run the scripts
 
-1. Open 2 SSH terminal/Anaconda Prompt - Terminal 1 and Terminal 2. In both the terminals, activate virtual environment which has the libraries mentioned in **requirements.txt** file. You should be inside experiment_tracking_and_model_registry directory in both the terminals.
+1. Open 2 SSH terminal/Anaconda Prompt - Terminal 1 and Terminal 2. In both the terminals, activate virtual/conda environment which has the libraries mentioned in **requirements.txt** file. You should be inside experiment_tracking_and_model_registry directory in both the terminals.
 
 2. In terminal 1, start the MLflow server using the following command :
 
