@@ -15,6 +15,10 @@ Install Prefect 2.0.1 only after deleting the ".prefect" folder.
 
 1. Open 3 SSH terminal windows, terminal 1, terminal 2, terminal 3. In all the terminals, activate virtual environment which has the libraries mentioned in Pipfile. You should be inside model_monitoring directory in all the 3 terminals.
 
+Activate the virtual environment by running the following command in SSH terminal :
+
+      pipenv shell
+
 2. In Terminal 1, start the Evidently, Prometheus and Grafana services by executing the following command :
 
        docker-compose up
