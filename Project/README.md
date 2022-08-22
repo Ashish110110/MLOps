@@ -42,4 +42,13 @@ More information on how to create a virtual environment using Pipfile can be fou
 * Best Practices : Unit tests, Integration test, Linting, Code Formatting, Makefile and Pre-commit hooks
 
 
+## Future Works
+
+Currently, the project has some room for improvements :
+
+1. Add the possibility to retrain the model and send alerts when the data drift is detected
+2. Add CI/CD
+3. Add IaC
+
+
 **NOTE :** For peer reviewing process, please download the repository as zip file instead of cloning it using Git bash. You will run into issues while reviewing best_practices section of the project if you clone the repository.
