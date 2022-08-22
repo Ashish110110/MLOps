@@ -12,6 +12,8 @@ I have used Red Wine Quality dataset. It can be found [here](https://www.kaggle.
 
 ## Project Structure
 
+The project is implemented on virtual machine Ubuntu 22.04 using AWS. The steps for each section for reproducbility are based on specific AWS configuration and may be different for different platforms (GCP, Azure). To reproduce the project without running into issues, I recommend to prepare the virtual environment as shown [here](https://www.youtube.com/watch?v=IXSiYkP23zo&list=PL3MmuxUbc_hIUISrluw_A7wDSmfOhErJK&index=4). Create EC2 instance as shown in the video. Using any different platform may cause bugs. 
+
 I have made separate directory for each criteria mentioned in README of [MLOps Zoomcamp Course Project](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/07-project)
 
 The directories are : 
