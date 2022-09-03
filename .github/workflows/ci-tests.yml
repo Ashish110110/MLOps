@@ -1,8 +1,8 @@
 name: CI-Tests
 on:
-  pull_request:
+  push:
     branches:
-      - 'develop'
+      - 'main'
     paths:
       - 'Project/best_practices/code/**'
 
